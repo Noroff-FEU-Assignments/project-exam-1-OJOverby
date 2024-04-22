@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Tenacious Traveler. Read about my adventure around the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jomhuria&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title class="title">Tenacious Traveler</title>
+</head>
+<body>
+    <header id="header"></header>
+    <main class="post-page-wrapper">
+        <div class="flex flex-col">
+    <section class="post-container">
+        <div class="centered">
+        <div class="loading">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <div class="plane"></div>
+
+        </div>
+    </div>
+    </section>
+    <section class="comments-container">
+        <h1>Comments</h1>
+        <div class="comments">There seems to be no comments for this post. Be the first one!</div>
+        <form class="new-comment">
+            <input type="hidden" id="postId">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullName">
+            <div class="error-msg" id="nameError">You need to enter a name. Atleast 3 letters.</div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <div class="error-msg" id="emailError">You need to enter a valid email address</div>
+            <label for="message">Comment:</label>
+            <textarea name="comment" id="comment" cols="20" rows="10"></textarea>
+            <div class="error-msg" id="msgError">Ops, you forgot your comment. Atleast 10 letters long.</div>
+            <div class="centered"><button type="submit" class="CTA sendFormButton"><h2>SEND</h2></button></div>
+        </form>
+    </section></div>
+    <div class="related-wrapper">
+        <h2>Blog posts in the same category:</h2>
+        <div class="related-container"></div>
+    </div>
+    <div class="modal">
+        <img class="modal-image" src="images/placeholder.jpeg" alt="Placeholder image">
+    </div>
+</main>
+    <footer id="footer"></footer>
+</body>
+<script src="js/html-elements/header.js"></script>
+<script src="js/html-elements/footer.js"></script>
+<script src="js/post.js" type="module"></script>
+<script src="js/app.js"></script>
+<script src="js/search.js" type="module"></script>
+<script src="js/comment.js" type="module"></script>
+</html>
