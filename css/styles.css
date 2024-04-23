@@ -370,7 +370,7 @@ main h2 {
 }
 
 main h3 {
-    margin-top: 1rem;
+    margin-top: 5px;
 }
 
 /* Loading animation */
@@ -494,16 +494,20 @@ main h3 {
 }
 
 .carousel-card {
-    width: 100%;
+    width: 500px;
     height: 250px;
     margin: 10px;
     background-color: white;
     align-items: center;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
+
+.related-container .carousel-card{
+    margin-bottom: 50px;
+}
+
 
 .carousel-link {
     display: contents;
@@ -722,6 +726,7 @@ figure {
     display: flex;
     flex-direction: column;
     margin: 70px 30px 30px;
+    
 }
 
 .related-wrapper {
