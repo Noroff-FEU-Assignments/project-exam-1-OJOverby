@@ -350,6 +350,7 @@ div.mobile-menu {
 }
 
 .post-page-wrapper {
+    width: 100%;
     grid-template-columns: auto auto;
     place-items: start;
 }
@@ -636,7 +637,6 @@ main h3 {
 .post-container, .comments-container {
     width: 90%;
     background-color: white;
-    padding: 70px;
 }
 
 .comments-container {
@@ -855,6 +855,18 @@ figure {
     main .waves {
         height: 70px;
     }
+
+    .title-container h1, .secondary-color {
+        font-size: 50px;
+    }
+
+    .logo {
+        width: auto;
+        height: 60%;
+        margin-left: 10px;
+    }
+
+  
 
     
 }
