@@ -1,3 +1,4 @@
+// Script for displaying search results on the search page
 import { BASE_URL } from "./api.js";
 import { Embed_URL } from "./api.js";
 import { renderBlogCard } from "./functions/renderBlogCard.js";
@@ -10,7 +11,7 @@ const resultsContainer = document.querySelector(".posts-container");
 
 async function searchResults() {
     try {
-        const response = await fetch(BASE_URL+Embed_URL);
+        const response = await fetch(BASE_URL+Embed_URL+"&per_page=100");
         const posts = await response.json();
         if(response.ok) {
             resultsContainer.innerHTML = "";

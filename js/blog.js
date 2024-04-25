@@ -1,3 +1,4 @@
+// Script for displaying all the blog posts on the blog page
 import { BASE_URL } from "./api.js";
 import { Embed_URL } from "./api.js";
 import { renderBlogCard } from "./functions/renderBlogCard.js";

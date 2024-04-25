@@ -1,3 +1,4 @@
+// Script for the carousel on the landing page
 import { BASE_URL } from "./api.js";
 import { Embed_URL } from "./api.js";
 const carousel = document.querySelector(".carousel");

@@ -1,3 +1,4 @@
+// Script for rendingering everything on the Posts page
 import { BASE_URL } from "./api.js";
 import { Embed_URL } from "./api.js";
 import { modalClicker } from "./functions/modalClicker.js";
@@ -40,7 +41,7 @@ async function fetchPost(){
         `).join('');
       } 
    
-      getPosts();
+      getPosts(post.id);
       modalClicker();
     } else {
       postContainer.innerHTML = "<h3>Ops, seems like we're not getting a response from our blog provider. Please try again later</h3>";
@@ -57,13 +58,13 @@ async function fetchPost(){
 fetchPost();
 
 
-async function getPosts() {
+async function getPosts(id) {
   try {
       const response = await fetch(BASE_URL+Embed_URL+"&per_page=100");
       const posts = await response.json();
       if (response.ok) {
         related.innerHTML = "";
-        const sortedPosts = posts.filter(post => post.categories.includes(category));
+        const sortedPosts = posts.filter(post => post.id !== id && post.categories.includes(category));
         
         sortedPosts.forEach(function(post){
                 let preImage = post._embedded["wp:featuredmedia"][0].media_details.sizes.thumbnail.source_url || "../images/placeholder.jpeg";
