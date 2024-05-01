@@ -3,7 +3,7 @@
 header = document.getElementById("header");
 header.innerHTML = `
 <div class="title-container">
-  <img src="/images/ttlogo.png" class="logo"><a href="index.html"><h1>TENACIOUS <span class="secondary-color">TRAVELER</span></h1></a>
+  <a href="index.html" class="flex"><img src="/images/ttlogo.png" class="logo"><h1>TENACIOUS <span class="secondary-color">TRAVELER</span></h1></a>
   <div class="link-container">
     <a href="blog.html"><h3>BLOG</h3></a>
     <a href="about.html"><h3>ABOUT</h3></a>

@@ -5,6 +5,7 @@ import { modalClicker } from "./functions/modalClicker.js";
 import { updateTime } from "./functions/updateTime.js";
 
 const postContainer = document.querySelector(".post-container");
+const postHero = document.querySelector(".post-hero-container");
 const comments = document.querySelector(".comments");
 const title = document.querySelector(".title");
 const queryString = document.location.search;
@@ -25,8 +26,8 @@ async function fetchPost(){
       let image = post._embedded["wp:featuredmedia"]?.[0].link || "../images/placeholder.jpeg";
       category = post.categories[0];
       commentId.value = post.id;
+      postHero.innerHTML =`<div class="post-hero" style="background-image: url('${image}');"><img class="waves" src="images/wavesOpacity.svg"></div>`
       postContainer.innerHTML = `
-      <div class="image-container" style="background-image: url('${image}');"><img class="waves" src="images/wavesOpacity.svg"></div>
       <h1>${post.title.rendered}</h1>
       <p>Published ${updateTime(post.date)}</p>
       ${post.content.rendered}`;
