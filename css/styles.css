@@ -326,6 +326,10 @@ div.mobile-menu {
     justify-content: center;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .small-hero {
     position: relative;
     width: 100%;
@@ -620,6 +624,10 @@ main h3 {
     border-radius: 100px 100px 0 0;
 }
 
+.load-more-button {
+    margin: 30px 0;
+}
+
 .blog-card {
     max-width: 500px;
     height: auto;
@@ -669,6 +677,7 @@ main h3 {
 }
 
 .comments-container {
+    margin-top: 50px;
     width: 60%;
 }
 
@@ -694,8 +703,8 @@ main h3 {
 }
 
 
-.post-container p {
-    margin: 1rem 0;
+.post-container h3 {
+    margin-top: 1rem;
 }
 
 .post-container img {
@@ -819,6 +828,9 @@ figure {
 
     .title-container {
         width: 100%;
+        a {
+            margin-left: 0px;
+        }
     }
 
 
@@ -899,7 +911,7 @@ figure {
         height: 50px;
     }
 
-    .title-container h1, .secondary-color {
+    .title-container h1, .secondary-color, footer h1 {
         font-size: 50px;
     }
 
@@ -932,8 +944,14 @@ figure {
 
     main h1 {
         font-size: 70px;
-        line-height: normal;
+        line-height: 2.3rem;
     }
+
+    main .new-blog-posts h2 {
+        font-size: 60px;
+    }
+
+    
 
     
 }
