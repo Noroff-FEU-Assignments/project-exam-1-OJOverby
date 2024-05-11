@@ -345,7 +345,7 @@ div.mobile-menu {
     position: relative;
     width: 100%;
     height: 700px;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -503,8 +503,9 @@ main h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: fit-content;
 }
+
 
 .next-button, .previous-button {
     width: 70px;
@@ -513,14 +514,18 @@ main h3 {
     background-color:black;
     color: white;
     border-radius: 0 3px 3px 0;
-    margin: 10px 5px;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    
+    margin-bottom: 25px;
 }
+
+.next-button:hover, .previous-button:hover, .next-button:focus, .previous-button:focus   {
+    font-size: 3rem;
+}
+
 
 .carousel-card {
     width: 500px;
@@ -538,9 +543,7 @@ main h3 {
 }
 
 
-.carousel-link {
-    display: contents;
-}
+
 
 .hover-text {
     position: absolute;
@@ -563,6 +566,9 @@ main h3 {
 
 .new-blog-posts {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .new-blog-posts h2 {
@@ -811,13 +817,19 @@ figure {
 .carousel-card {
     width: 400px;
     height: 200px; 
+    p {
+        font-size: 15px;
+    }
 }
 }
 
 @media (max-width: 1450px) {
     .carousel-card {
         width: 320px;
-        height: 200px;      
+        height: 200px;
+        p {
+            font-size: 12px;
+        }  
     }
     }
 
