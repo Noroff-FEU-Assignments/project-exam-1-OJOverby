@@ -32,7 +32,7 @@ async function fetchPost(){
           // Fetch the post ID for the comment section
       commentId.value = post.id;
           // Place the featured image as the hero image on the post page
-      postHero.innerHTML =`<div class="post-hero" style="background-image: url('${image}');"><img class="waves" src="images/wavesOpacity.svg"></div>`
+      postHero.innerHTML =`<div class="post-hero" style="background-image: url('${image}');"><img class="waves" src="images/wavesOpacity.svg" alt="White waves for decoration between images and content"></div>`
           // Render post content
       postContainer.innerHTML = `
       <h1>${post.title.rendered}</h1>
