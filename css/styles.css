@@ -10,17 +10,6 @@
     color: black;
 }
 
-/* Color pallette
-color choices
-yellow: #F2E41D
-orange: F28627
-green: 648C0D
-blue: 148EFF
-
-
-*/
-
-
 :root {
     --background: #ffffff;
     --primary: #282828;
@@ -55,13 +44,10 @@ main {
     color: white;
 }
 
-
-
 .link-container a:hover, .link-container a:focus {
     color: var(--secondary);
     transition: color 0.3s;
 }
-
 
 .link-container a:after {
     display: block;
@@ -95,7 +81,6 @@ main {
     font-style: normal;
 }
 
-
 .logo {
     width: auto;
     height: 50px;
@@ -113,7 +98,6 @@ main {
     margin-left: 50px;
 }
 
-
 .searchbar {
     display: flex;
     background-color: #FFFFFF;
@@ -123,7 +107,6 @@ main {
     border-radius: 60px;
     align-items: center;
     justify-content: center;
-   
     margin-right: 5%;
 }
 
@@ -165,7 +148,6 @@ main {
     display: none;
 }
 
-
 div.mobile-menu {
     display: none;
 }
@@ -177,8 +159,6 @@ div.mobile-menu {
 #menu-checkbox:checked ~ #mobile-dropdown-menu {
     display: block;
 }
-
-
 
 #mobile-dropdown-menu {
     padding-top: 20px;
@@ -217,8 +197,6 @@ div.mobile-menu {
         transform: scaleY(1);
     }
 }
-
-
 
 .mouse-pointer {
     cursor: pointer;
@@ -269,7 +247,6 @@ div.mobile-menu {
 .mobile-menu-button.open .hamburger-menu::after {
     transform: rotate(-45deg) translate(5px, -10px);
 }
-
 
 .mobile-menu-button.open .hamburger-menu {
     background-color: #000000;
@@ -494,10 +471,7 @@ main h3 {
     top: 50%;
     left: 60%;
     z-index: 2;
-
 }
-
-
 
 .carousel, .carousel-container {
     display: flex;
@@ -505,7 +479,6 @@ main h3 {
     align-items: center;
     width: fit-content;
 }
-
 
 .next-button, .previous-button {
     width: 70px;
@@ -526,7 +499,6 @@ main h3 {
     font-size: 3rem;
 }
 
-
 .carousel-card {
     width: 500px;
     height: 250px;
@@ -541,9 +513,6 @@ main h3 {
 .related-container .carousel-card{
     margin-bottom: 50px;
 }
-
-
-
 
 .hover-text {
     position: absolute;
@@ -607,7 +576,6 @@ main h3 {
 
 .blog-hero {
     background-image: url("/images/bloghero.jpg");
-
 }
 
 .posts-container {
@@ -645,8 +613,7 @@ main h3 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    box-shadow: 2px 6px 10px rgba(0,0,0,.5);
-    
+    box-shadow: 2px 6px 10px rgba(0,0,0,.5);   
 }
 
 .blog-card p {
@@ -687,6 +654,10 @@ main h3 {
     width: 60%;
 }
 
+.carousel-link {
+    width: 100%;
+}
+
 .image-container {
     position: relative;
     width: 100%;
@@ -708,7 +679,6 @@ main h3 {
 
 }
 
-
 .post-container h3 {
     margin-top: 1rem;
 }
@@ -717,7 +687,6 @@ main h3 {
     width: 100%;
     height: auto;
 }
-
 
 .new-comment {
     margin-top: 50px;
@@ -732,7 +701,6 @@ main h3 {
     border-radius: 10px;
     box-shadow: 2px 6px 10px rgba(0,0,0,.5);
 }
-
 
 .modal {
     display: none;
@@ -759,7 +727,7 @@ main h3 {
 
 figure {
     width: 60%;
-    margin: auto;
+    margin: 30px auto;
 }
 
 .related-container {
@@ -877,12 +845,10 @@ figure {
     .carousel-card {
         width: 90%;
         height: auto;
-        
     }
 
     .next-button, .previous-button {
         display: none;
-        
     }
 
     .searchbar {
@@ -903,7 +869,6 @@ figure {
         left: 0;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     .posts-container {
@@ -962,8 +927,4 @@ figure {
     main .new-blog-posts h2 {
         font-size: 60px;
     }
-
-    
-
-    
 }
