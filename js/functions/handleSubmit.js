@@ -2,7 +2,7 @@
 // Function for submitting contact form and comments.
 
 function handleSubmit(event) {
-    // Prevent normal submittion
+    // Prevent default submission
     event.preventDefault();
       // Get the class from the event target
     const formClass = event.target.className;
@@ -47,7 +47,7 @@ function handleSubmit(event) {
         if (response.ok) {
           if(formClass=="contact-form"){
             // Message shown if the data was sent from the contact form
-            document.querySelector("."+formClass).innerHTML = `<p>Thank you for your feedback!</p>`;
+            document.querySelector("."+formClass).innerHTML = `<h3>Thank you for your feedback!</h3>`;
           } else {
             // Message shown if the data was sent from the comments form
             document.querySelector(".new-comment").innerHTML = `<p>Your comment has been submitted. It can take a few minutes before it is visable</p>`;

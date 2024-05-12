@@ -507,7 +507,10 @@ main h3 {
     align-items: center;
     text-align: center;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    p {
+        font-size: 20px;
+    }
 }
 
 .related-container .carousel-card{
@@ -583,11 +586,16 @@ main h3 {
     grid-template-columns: auto auto;
     justify-content: space-around;
     align-content: space-between;
+    min-height: 40vh;
 }
 
 .post-container h2 {
     margin-top: 40px;
     font-size: 2rem;
+}
+
+.post-container p, .about-me p {
+    margin-bottom: 0.5rem;
 }
 
 .post-container ol {
@@ -711,7 +719,7 @@ main h3 {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .modal img {
@@ -724,6 +732,7 @@ main h3 {
     transform: translate(-50%, -50%);
     z-index: 99;
 }
+
 
 figure {
     width: 60%;
@@ -763,6 +772,7 @@ figure {
 
 .contact-form {
     width: 30%;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
 }

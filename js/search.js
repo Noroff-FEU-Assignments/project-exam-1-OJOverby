@@ -29,7 +29,7 @@ async function searchResults() {
             })
             } else {
                 // Show error message if site cant connect to API
-                resultsContainer.innerHTML = `<h3>Ops, seems like we're not getting a response from our blog provider. Please try again later"</h3>`;
+                resultsContainer.innerHTML = `<h3>Ops, seems like we're not getting a response from our blog provider. Please try again later</h3>`;
             }
         } else {
                 // Show message if the search is unsuccessful
