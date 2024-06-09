@@ -1,6 +1,6 @@
 # The Tenacious Traveler - Exam year 1
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://olejorgen.no/images/TenaciousTraveler/tenacioustraveler.netlify.app_.png)
 
 Exam project for the first year at Noroff. The assignment was to create a a blog site.
 
